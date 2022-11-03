@@ -15,7 +15,7 @@ public class FormServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         String title = "Using GET and POST Methods to Read Form Data";
-        String docType = "<!DOCTYPE html>";
+        String docType = "<!DOCTYPE html>\n";
 
         out.println(docType +
                 "<html>\n" +

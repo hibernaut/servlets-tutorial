@@ -8,17 +8,14 @@ import java.util.Enumeration;
 
 public class ReadParamsServlet extends HttpServlet {
 
-    // Method to handle GET method request.
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Set response content type
         response.setContentType("text/html");
 
         PrintWriter out = response.getWriter();
         String title = "Reading All Form Parameters";
-        String docType =
-                "<!doctype html public \"-//w3c//dtd html 4.0 " + "transitional//en\">\n";
+        String docType = "<!DOCTYPE html>\n";
 
         out.println(docType +
                         "<html>\n" +
@@ -39,7 +36,6 @@ public class ReadParamsServlet extends HttpServlet {
             out.print("<tr><td>" + paramName + "</td>\n<td>");
             String[] paramValues = request.getParameterValues(paramName);
 
-            // Read single valued data
             if (paramValues.length == 1) {
                 String paramValue = paramValues[0];
                 if (paramValue.length() == 0)
@@ -47,7 +43,6 @@ public class ReadParamsServlet extends HttpServlet {
                 else
                     out.println(paramValue);
             } else {
-                // Read multiple valued data
                 out.println("<ul>");
 
                 for (String paramValue : paramValues) {
@@ -59,7 +54,6 @@ public class ReadParamsServlet extends HttpServlet {
         out.println("</tr>\n</table>\n</body></html>");
     }
 
-    // Method to handle POST method request.
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 

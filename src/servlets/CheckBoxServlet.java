@@ -15,7 +15,7 @@ public class CheckBoxServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         String title = "Reading Checkbox Data";
-        String docType = "<!DOCTYPE html>";
+        String docType = "<!DOCTYPE html>\n";
 
         out.println(docType +
                         "<html>\n" +
