@@ -21,4 +21,22 @@
         <servlet-name>FormServlet</servlet-name>
         <url-pattern>/formservlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckBoxServlet</servlet-name>
+        <servlet-class>servlets.CheckBoxServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckBoxServlet</servlet-name>
+        <url-pattern>/checkbox</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReadParamsServlet</servlet-name>
+        <servlet-class>servlets.ReadParamsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadParamsServlet</servlet-name>
+        <url-pattern>/params</url-pattern>
+    </servlet-mapping>
 </web-app>
