@@ -57,4 +57,13 @@
         <servlet-name>RefreshServlet</servlet-name>
         <url-pattern>/refresh</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowErrorServlet</servlet-name>
+        <servlet-class>servlets.ShowErrorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowErrorServlet</servlet-name>
+        <url-pattern>/error</url-pattern>
+    </servlet-mapping>
 </web-app>
