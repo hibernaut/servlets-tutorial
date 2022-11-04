@@ -66,4 +66,18 @@
         <servlet-name>ShowErrorServlet</servlet-name>
         <url-pattern>/error</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>LogFilter</filter-name>
+        <filter-class>filters.LogFilter</filter-class>
+        <init-param>
+            <param-name>test-param</param-name>
+            <param-value>Initialization Parameter</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>LogFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>
