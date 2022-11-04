@@ -39,4 +39,13 @@
         <servlet-name>ReadParamsServlet</servlet-name>
         <url-pattern>/params</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayHeaderServlet</servlet-name>
+        <servlet-class>servlets.DisplayHeaderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayHeaderServlet</servlet-name>
+        <url-pattern>/display</url-pattern>
+    </servlet-mapping>
 </web-app>
