@@ -48,4 +48,13 @@
         <servlet-name>DisplayHeaderServlet</servlet-name>
         <url-pattern>/display</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RefreshServlet</servlet-name>
+        <servlet-class>servlets.RefreshServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RefreshServlet</servlet-name>
+        <url-pattern>/refresh</url-pattern>
+    </servlet-mapping>
 </web-app>
