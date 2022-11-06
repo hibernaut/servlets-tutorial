@@ -67,6 +67,25 @@
         <url-pattern>/error</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>ErrorHandler</servlet-name>
+        <servlet-class>errorhandlers.ErrorHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorHandler</servlet-name>
+        <url-pattern>/errorhandler</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/errorhandler</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type >
+        <location>/errorhandler</location>
+    </error-page>
+
     <filter>
         <filter-name>LogFilter</filter-name>
         <filter-class>filters.LogFilter</filter-class>
@@ -75,7 +94,6 @@
             <param-value>Initialization Parameter</param-value>
         </init-param>
     </filter>
-
     <filter-mapping>
         <filter-name>LogFilter</filter-name>
         <url-pattern>/*</url-pattern>
