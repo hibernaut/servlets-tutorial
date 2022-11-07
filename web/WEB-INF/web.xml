@@ -76,6 +76,33 @@
         <url-pattern>/errorhandler</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>FormCookiesServlet</servlet-name>
+        <servlet-class>servlets.FormCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FormCookiesServlet</servlet-name>
+        <url-pattern>/formcookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <servlet-class>servlets.DeleteCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <url-pattern>/deletecookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReadCookiesServlet</servlet-name>
+        <servlet-class>servlets.ReadCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadCookiesServlet</servlet-name>
+        <url-pattern>/readcookies</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/errorhandler</location>
