@@ -103,6 +103,15 @@
         <url-pattern>/readcookies</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>SessionTrackServlet</servlet-name>
+        <servlet-class>servlets.SessionTrackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionTrackServlet</servlet-name>
+        <url-pattern>/sessiontrack</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/errorhandler</location>
