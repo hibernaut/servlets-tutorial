@@ -112,6 +112,15 @@
         <url-pattern>/sessiontrack</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>DatabaseAccessServlet</servlet-name>
+        <servlet-class>servlets.DatabaseAccessServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DatabaseAccessServlet</servlet-name>
+        <url-pattern>/databaseaccess</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/errorhandler</location>

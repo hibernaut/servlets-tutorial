@@ -2,10 +2,8 @@ package servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.io.*;
+import java.util.*;
 
 public class RefreshServlet extends HttpServlet {
 

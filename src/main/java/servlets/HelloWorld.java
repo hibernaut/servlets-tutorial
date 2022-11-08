@@ -2,10 +2,10 @@ package servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 
 public class HelloWorld extends HttpServlet {
+
     private String message;
 
     public void init() throws ServletException{

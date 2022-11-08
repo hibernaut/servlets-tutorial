@@ -2,8 +2,7 @@ package servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Enumeration;
 
 public class DisplayHeaderServlet extends HttpServlet {
