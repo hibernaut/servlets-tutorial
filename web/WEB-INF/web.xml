@@ -139,6 +139,15 @@
         <url-pattern>/currentdate</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>PageRedirectServlet</servlet-name>
+        <servlet-class>servlets.PageRedirectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PageRedirectServlet</servlet-name>
+        <url-pattern>/pageredirect</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/errorhandler</location>
