@@ -121,6 +121,15 @@
         <url-pattern>/databaseaccess</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <servlet-class>servlets.FileUploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUploadServlet</servlet-name>
+        <url-pattern>/fileupload</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/errorhandler</location>
@@ -143,4 +152,12 @@
         <filter-name>LogFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+    <context-param>
+        <description>Location to store uploaded file</description>
+        <param-name>file-upload</param-name>
+        <param-value>
+            C:\apache-tomcat-8.5.82\webapps\data\
+        </param-value>
+    </context-param>
 </web-app>
