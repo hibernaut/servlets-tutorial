@@ -9,10 +9,7 @@ public class DeleteCookiesServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        Cookie cookie = null;
-        Cookie[] cookies = null;
-
-        cookies = request.getCookies();
+        Cookie[] cookies = request.getCookies();
 
         PrintWriter out = response.getWriter();
         String title = "Reading Cookies Example";
@@ -26,9 +23,7 @@ public class DeleteCookiesServlet extends HttpServlet {
         if (cookies != null) {
             out.println("<h2> Cookies Name and Value</h2>");
 
-            for (Cookie value : cookies) {
-                cookie = value;
-
+            for (Cookie cookie : cookies) {
                 if(cookie.getName().equals("first_name")) {
                     cookie.setMaxAge(0);
                     response.addCookie(cookie);
