@@ -157,6 +157,15 @@
         <url-pattern>/pagehitcounter</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>SendEmailServlet</servlet-name>
+        <servlet-class>servlets.SendEmailServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendEmailServlet</servlet-name>
+        <url-pattern>/sendemail</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/errorhandler</location>
