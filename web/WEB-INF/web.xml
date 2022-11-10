@@ -148,6 +148,15 @@
         <url-pattern>/pageredirect</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>PageHitCounterServlet</servlet-name>
+        <servlet-class>servlets.PageHitCounterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PageHitCounterServlet</servlet-name>
+        <url-pattern>/pagehitcounter</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/errorhandler</location>
@@ -168,6 +177,15 @@
     </filter>
     <filter-mapping>
         <filter-name>LogFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>SiteHitCounter</filter-name>
+        <filter-class>filters.SiteHitCounter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>SiteHitCounter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
