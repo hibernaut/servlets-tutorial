@@ -175,6 +175,15 @@
         <url-pattern>/contextlog</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>LocaleServlet</servlet-name>
+        <servlet-class>servlets.LocaleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LocaleServlet</servlet-name>
+        <url-pattern>/locale</url-pattern>
+    </servlet-mapping>
+
     <error-page>
         <error-code>404</error-code>
         <location>/errorhandler</location>
